@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Group Quiz Live</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div>
+        <p class="eyebrow">Interactive Group Quiz</p>
+        <h1>Live QR Quiz</h1>
+      </div>
+      <div class="pill" id="roomPill">No room</div>
+    </header>
+
+    <main id="home" class="card center">
+      <h2>Start or Join Quiz</h2>
+      <p>Create a host room, display the QR code, and participants can join from their phone browser.</p>
+      <div class="actions">
+        <button id="createHost">Create Host Room</button>
+        <input id="manualRoom" placeholder="Enter room code" maxlength="8" />
+        <button id="joinManual" class="secondary">Join</button>
+      </div>
+    </main>
+
+    <section id="namePanel" class="card hidden center">
+      <h2>Enter your name</h2>
+      <input id="playerName" placeholder="Your name" />
+      <button id="confirmJoin">Join Quiz</button>
+      <p id="joinError" class="error"></p>
+    </section>
+
+    <section id="hostPanel" class="grid hidden">
+      <div class="card host-left">
+        <h2>Host Screen</h2>
+        <p class="muted">Ask participants to scan this QR code.</p>
+        <img id="qr" class="qr" alt="Quiz QR code" />
+        <a id="joinLink" target="_blank" rel="noreferrer">Open participant link</a>
+        <div class="room-code" id="hostRoomCode"></div>
+        <div class="actions wrap">
+          <button id="startQuiz">Start / Restart Question</button>
+          <button id="revealAnswer" class="accent">Show Correct Answer</button>
+          <button id="nextQuestion" class="secondary">Next Question</button>
+        </div>
+        <details>
+          <summary>Load your own questions JSON</summary>
+          <p class="muted small">Use answer as zero-based index. Example: answer 0 means option A.</p>
+          <textarea id="questionJson" spellcheck="false"></textarea>
+          <button id="loadQuestions" class="secondary">Load Questions</button>
+          <p id="loadStatus" class="small"></p>
+        </details>
+      </div>
+      <div class="card">
+        <div class="topline"><h2 id="hostQuestion">Question</h2><span id="progress"></span></div>
+        <div id="hostOptions"></div>
+        <h3>Live responses</h3>
+        <div id="bars"></div>
+        <h3>Participants <span id="participantCount"></span></h3>
+        <div id="participants" class="chips"></div>
+        <div id="hostExplanation" class="explanation hidden"></div>
+      </div>
+    </section>
+
+    <section id="playerPanel" class="card hidden">
+      <p class="eyebrow" id="playerRoom"></p>
+      <h2 id="playerQuestion">Waiting for host...</h2>
+      <div id="playerOptions"></div>
+      <div id="playerExplanation" class="explanation hidden"></div>
+    </section>
+  </div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="client.js"></script>
+</body>
+</html>
