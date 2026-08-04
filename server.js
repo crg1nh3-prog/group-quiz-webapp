@@ -30,7 +30,117 @@ const defaultQuestions = [
     options: ['Only attendance tracking', 'Structured review of SQCD topics at different leadership layers', 'Replacing quality audits', 'Only machine cleaning'],
     answer: 1,
     explanation: 'Daily Layered Review supports structured escalation and review of Safety, Quality, Cost, and Delivery topics across levels.'
-  }
+  },
+{
+    question: 'What does OEE stand for?',
+    options: ['Overall Equipment Effectiveness', 'Operational Engineering Efficiency', 'Overall Employee Evaluation', 'Output Efficiency Estimation'],
+    answer: 0,
+    explanation: 'OEE measures manufacturing productivity by considering Availability, Performance, and Quality.'
+},
+
+{
+    question: 'What comes once in a minute, twice in a moment, but never in a thousand years?',
+    options: ['Letter A', 'Letter M', 'Letter E', 'Number 1'],
+    answer: 1,
+    explanation: 'The letter M appears once in "minute", twice in "moment", and not at all in "thousand years".'
+},
+
+{
+    question: 'If a rooster lays an egg on a rooftop, which side does it roll down?',
+    options: ['Left', 'Right', 'North', 'None'],
+    answer: 3,
+    explanation: 'Roosters do not lay eggs.'
+},
+{
+    question: 'Which country originated the 5S workplace organization methodology?',
+    options: ['Germany', 'Japan', 'United States', 'India'],
+    answer: 1,
+    explanation: '5S originated in Japan as part of the Toyota Production System. The five principles are Sort, Set in Order, Shine, Standardize, and Sustain.'
+},
+  {
+question: 'What is the largest ocean on Earth?',
+options: ['Atlantic Ocean', 'Indian Ocean', 'Pacific Ocean', 'Arctic Ocean'],
+answer: 2,
+explanation: 'The Pacific Ocean is the largest and deepest ocean on Earth.'
+},
+
+{
+    question: 'Which country is widely recognized as the birthplace of Lean Manufacturing?',
+    options: ['China', 'Japan', 'Germany', 'Sweden'],
+    answer: 1,
+    explanation: 'Lean Manufacturing evolved from the Toyota Production System developed in Japan.'
+},
+{
+question: 'The more you take away from me, the bigger I become. What am I?',
+options: ['Mountain', 'Hole', 'River', 'Cloud'],
+answer: 1,
+explanation: 'The more you dig from a hole, the larger it becomes.'
+},
+{
+    question: 'Which country invented the modern assembly line concept used in mass production?',
+    options: ['Germany', 'Japan', 'USA', 'Italy'],
+    answer: 2,
+    explanation: 'Henry Ford popularized the moving assembly line in the United States, revolutionizing manufacturing.'
+},
+{
+question: 'How many animals of each species did Moses take onto the Ark?',
+options: ['2', '4', '6', 'None'],
+answer: 3,
+explanation: 'Moses did not take animals onto the Ark. Noah did.'
+},
+{
+    question: 'Which country has the highest number of time zones?',
+    options: ['Russia', 'USA', 'France', 'China'],
+    answer: 2,
+    explanation: 'Due to its overseas territories, France spans 12 official time zones.'
+},
+  
+{
+    question: 'What was the first product manufactured by Bosch?',
+    options: ['Spark Plug', 'Low-voltage Magneto', 'Headlamp', 'Starter Motor'],
+    answer: 1,
+    explanation: 'Robert Bosch founded his workshop in 1886 and became successful with the low-voltage magneto for gas engines.'
+},
+
+{
+question: 'Before Mount Everest was discovered, what was the highest mountain in the world?',
+options: ['K2', 'Kangchenjunga', 'Mount Everest', 'Makalu'],
+answer: 2,
+explanation: 'Mount Everest was still the highest mountain even before it was discovered.'
+},
+{
+    question: 'What does a barcode primarily provide?',
+    options: ['Decoration', 'Traceability', 'Security Camera Feed', 'Machine Speed'],
+    answer: 1,
+    explanation: 'Barcodes allow products and materials to be tracked throughout the manufacturing process.'
+},
+
+{
+    question: 'Which famous scientist worked as a patent examiner before becoming world-famous?',
+    options: ['Newton', 'Einstein', 'Tesla', 'Galileo'],
+    answer: 1,
+    explanation: 'Albert Einstein worked at the Swiss Patent Office before publishing his groundbreaking theories.'
+},
+
+  {
+question: 'Which word becomes shorter when you add two letters to it?',
+options: ['Long', 'Tall', 'Short', 'Small'],
+answer: 2,
+explanation: 'Adding "er" to "short" makes the word "shorter".'
+},
+{
+question: 'How many birthdays does the average person have?',
+options: ['One per year', '10', '50', 'One'],
+answer: 3,
+explanation: 'A person is only born once, so they have one birthday.'
+},
+
+  {
+question: 'Which English word contains all five vowels in order?',
+options: ['Education', 'Questionnaire', 'Sequential', 'Beautiful'],
+answer: 2,
+explanation: 'Sequential contains a-e-i-o-u in the correct order.'
+},
 ];
 
 const rooms = new Map();
