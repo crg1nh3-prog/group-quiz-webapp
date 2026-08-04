@@ -135,11 +135,17 @@ answer: 3,
 explanation: 'A person is only born once, so they have one birthday.'
 },
 
+ {
+question: 'Which English word contains all five vowels in alphabetical order?',
+options: ['Facetious', 'Beautiful', 'Question', 'Education'],
+answer: 0,
+explanation: 'Facetious contains all five vowels (a, e, i, o, u) in alphabetical order.'
+},
   {
-question: 'Which English word contains all five vowels in order?',
-options: ['Education', 'Questionnaire', 'Sequential', 'Beautiful'],
-answer: 2,
-explanation: 'Sequential contains a-e-i-o-u in the correct order.'
+question: 'A plane crashes on the border between India and Nepal. Where do you bury the survivors?',
+options: ['India', 'Nepal', 'Both Countries', 'Nowhere'],
+answer: 3,
+explanation: 'You do not bury survivors. They survived.'
 },
 ];
 
